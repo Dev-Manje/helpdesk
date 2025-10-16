@@ -1,0 +1,19 @@
+version: "3.1"
+
+stories:
+- story: greet and help
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_request
+  - action: utter_help
+
+- story: direct help
+  steps:
+  - intent: help_request
+  - action: utter_help
+
+- story: escalate
+  steps:
+  - intent: escalate
+  - action: utter_escalate

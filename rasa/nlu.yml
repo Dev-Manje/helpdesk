@@ -1,0 +1,100 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - good morning
+    - good afternoon
+    - good evening
+    - greetings
+    - howdy
+
+- intent: help_request
+  examples: |
+    - I need help
+    - help me
+    - support
+    - I have a problem
+    - issue with IT
+    - HR question
+    - can you assist me
+    - I'm having trouble
+    - something is wrong
+    - not working properly
+
+- intent: password_reset
+  examples: |
+    - forgot my password
+    - reset password
+    - can't login
+    - password not working
+    - lost my password
+    - change password
+    - password recovery
+    - forgot login credentials
+
+- intent: computer_issues
+  examples: |
+    - computer not working
+    - laptop won't start
+    - PC is slow
+    - computer crashed
+    - blue screen
+    - computer freezing
+    - hardware problem
+    - my machine is broken
+
+- intent: network_issues
+  examples: |
+    - no internet
+    - wifi not working
+    - can't connect to network
+    - internet is slow
+    - network down
+    - connection problems
+    - VPN issues
+    - can't access shared drives
+
+- intent: software_issues
+  examples: |
+    - application not working
+    - software crashed
+    - program won't open
+    - Excel not working
+    - Outlook problems
+    - Teams not loading
+    - software error
+    - app is frozen
+
+- intent: escalate
+  examples: |
+    - escalate this
+    - I need a human
+    - connect to agent
+    - speak to someone
+    - transfer to support
+    - this isn't helping
+    - I want to talk to a person
+    - get me an agent
+
+- intent: create_ticket
+  examples: |
+    - create a ticket
+    - open a support request
+    - file a complaint
+    - submit a request
+    - new ticket
+    - report an issue
+    - log a problem
+
+- intent: check_status
+  examples: |
+    - check my tickets
+    - ticket status
+    - what's the status
+    - any updates
+    - check my requests
+    - track my issue

@@ -1,0 +1,57 @@
+version: "3.1"
+
+intents:
+  - greet
+  - help_request
+  - password_reset
+  - computer_issues
+  - network_issues
+  - software_issues
+  - escalate
+  - create_ticket
+  - check_status
+
+responses:
+  utter_greet:
+    - text: "Hello! I'm HelpMate, your IT support assistant. How can I help you today?"
+    - text: "Hi there! I'm here to help with your IT support needs. What can I assist you with?"
+
+  utter_help:
+    - text: "Please describe your issue in detail, and I'll try to assist or escalate to a human agent."
+    - text: "I'm here to help! Could you please provide more details about your problem?"
+
+  utter_password_reset:
+    - text: "I can help you with password reset! Go to the login page, click 'Forgot Password', enter your email, and check for reset instructions. Would you like me to create a ticket for further assistance?"
+
+  utter_computer_issues:
+    - text: "For computer issues, try restarting your computer, checking cable connections, and running Windows Update. If these don't help, I can create a support ticket for you."
+
+  utter_network_issues:
+    - text: "For network issues, check your WiFi connection, try reconnecting, and restart your router. If the problem persists, I can escalate this to our network team."
+
+  utter_software_issues:
+    - text: "For software problems, try restarting the application, checking for updates, and restarting your computer. If the issue continues, I can create a support ticket."
+
+  utter_escalate:
+    - text: "I'll create a support ticket and assign it to our team. Please provide a brief description of your issue."
+
+  utter_create_ticket:
+    - text: "I'll help you create a support ticket. Please describe your issue in detail."
+
+  utter_check_status:
+    - text: "Let me check your recent tickets for you."
+
+actions:
+  - utter_greet
+  - utter_help
+  - utter_password_reset
+  - utter_computer_issues
+  - utter_network_issues
+  - utter_software_issues
+  - utter_escalate
+  - utter_create_ticket
+  - utter_check_status
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
